@@ -580,6 +580,17 @@
       margin-top: 0.25rem;
     }
     .footer-contact a:hover { color: var(--text); }
+      select{width:100%;font:inherit;color:var(--text);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:0.8rem 0.9rem;min-height:48px}
+    select option{color:#111}
+    .kit{margin-top:1.5rem;display:grid;gap:1rem}
+    .kit-card{border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:1.1rem 1.2rem;background:rgba(255,255,255,0.03)}
+    .kit-card h3{margin:0 0 .6rem;font-size:1.05rem}
+    .kit-card textarea{width:100%;min-height:220px;font:inherit;font-size:.95rem;line-height:1.5;color:var(--text);background:rgba(0,0,0,0.2);border:1px solid rgba(255,255,255,0.12);border-radius:12px;padding:.8rem}
+    .kit-card ul{margin:.2rem 0 0;padding-left:1.2rem;color:var(--muted)}.kit-card li{margin:.35rem 0}
+    .kit-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+    .kit-actions .btn{min-height:44px}
+    .links{display:flex;flex-wrap:wrap;gap:.5rem}.links a{color:var(--text)}
+    @media print{body *{visibility:hidden}#printArea,#printArea *{visibility:visible}#printArea{position:absolute;inset:0;white-space:pre-wrap;color:#000;font:12pt/1.5 Georgia,serif;padding:1in}}
   </style>
 <link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#5b8cff"><link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
@@ -600,7 +611,7 @@
         <a href="#who">Who it’s for</a>
         <a href="#pricing">Pricing</a>
       </nav>
-      <a class="nav-cta" href="#submit">Submit your product</a>
+      <a class="nav-cta" href="#submit">Build my partner kit</a>
     </div>
   </header>
 
@@ -610,13 +621,13 @@
       <h1>Find China OEM partners who take <em>royalty &amp; joint-dev</em> deals</h1>
       <p class="hero-sub">Royalty Desk matches inventors with royalty-friendly ODMs — so you can move from one-pager to NDA and royalty draft without writing a check for tooling up front.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#submit">Start matching</a>
+        <a class="btn btn-primary" href="#submit">Build my free partner kit</a>
         <a class="btn btn-ghost" href="#how">See how it works</a>
       </div>
       <div class="trust-row">
         <span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-          Alibaba + Qwen-class partner workflows
+          Free AI one-pager + outreach draft
         </span>
         <span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
@@ -624,7 +635,7 @@
         </span>
         <span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
-          Free to start · success-only later
+          Free · no account · nothing stored on a server
         </span>
       </div>
       <div class="not-this" aria-label="What Royalty Desk is not">
@@ -670,35 +681,35 @@
         <div class="center-head">
           <p class="section-label">How it works</p>
           <h2>One-pager in. Partner path out.</h2>
-          <p class="section-lead">Five clear steps from upload to a human-signed NDA and royalty draft — partnerships only, no auto-checkout.</p>
+          <p class="section-lead">Five clear steps from your idea to a human-signed NDA and royalty draft — partnerships only, no auto-checkout. Steps 1–3 run free on this page right now.</p>
         </div>
         <div class="steps">
           <article class="step">
             <div class="step-num">1</div>
             <div>
-              <h3>Upload your one-pager</h3>
-              <p>Share a short product brief: what it is, who it’s for, and what you’re asking a partner to build or co-develop.</p>
+              <h3>Write your one-pager</h3>
+              <p>Describe what it is, who it’s for, and what you’re asking a partner to build or co-develop. Free AI turns it into a clean, non-confidential one-pager.</p>
             </div>
           </article>
           <article class="step">
             <div class="step-num">2</div>
             <div>
-              <h3>Match royalty-friendly ODMs</h3>
-              <p>We use Alibaba + Qwen-class workflows to surface manufacturers open to royalty or joint-dev structures — not pure cash-tooling deals.</p>
+              <h3>Find royalty-friendly ODMs</h3>
+              <p>Get ready-made searches on Alibaba, Made-in-China, Global Sources and Google Patents for your product, plus a checklist for vetting factories open to royalty or joint-dev deals.</p>
             </div>
           </article>
           <article class="step">
             <div class="step-num">3</div>
             <div>
               <h3>Structured outreach</h3>
-              <p>Operator-led intros with a clear ask: partnership exploration, not RFQ spam or instant purchase orders.</p>
+              <p>A drafted first message with a clear ask: partnership exploration, not RFQ spam or instant purchase orders. You review it and send it yourself.</p>
             </div>
           </article>
           <article class="step">
             <div class="step-num">4</div>
             <div>
               <h3>NDA + royalty draft</h3>
-              <p>When interest lands, we help move to NDA and a draft royalty / joint-dev frame you can review with counsel.</p>
+              <p>When interest lands, use the protect-first checklist and royalty-term outline to move to an NDA/NNN and a draft royalty / joint-dev frame you review with counsel.</p>
             </div>
           </article>
           <article class="step">
@@ -757,14 +768,14 @@
           <div class="price-card">
             <h3>Start</h3>
             <div class="price-amount">$0</div>
-            <p>Submit your product, share your one-pager, and we start matching royalty-friendly ODMs.</p>
+            <p>Build your partner kit on this page: one-pager, outreach draft, factory searches and a protect-first checklist.</p>
             <ul>
-              <li>Free to submit and start matching</li>
-              <li>One-pager intake</li>
-              <li>Operator-led matching starts on submit</li>
-              <li>No subscription required to begin</li>
+              <li>Free AI one-pager and outreach draft</li>
+              <li>Factory search links + vetting checklist</li>
+              <li>Saved only in your browser</li>
+              <li>No account or subscription</li>
             </ul>
-            <a class="btn btn-ghost btn-full" href="#submit">Submit your product</a>
+            <a class="btn btn-ghost btn-full" href="#submit">Build my kit</a>
           </div>
           <div class="price-card featured">
             <span class="badge">Success only</span>
@@ -777,10 +788,10 @@
               <li>ODM referral fee (structure agreed case-by-case)</li>
               <li>Exact path confirmed before any fee is due</li>
             </ul>
-            <a class="btn btn-primary btn-full" href="#submit">Get matched</a>
+            <span class="btn btn-ghost btn-full" aria-disabled="true" style="cursor:default;opacity:.75">Operator matching: not open yet</span>
           </div>
         </div>
-        <p class="fineprint">Example fee structures only until your engagement terms are agreed in writing. No fake “users served” or testimonials on this page.</p>
+        <p class="fineprint">Operator-led matching isn’t taking requests yet, so no fees apply today. These are example fee structures only until engagement terms are agreed in writing. No fake “users served” or testimonials on this page.</p>
       </div>
     </section>
 
@@ -788,32 +799,41 @@
       <div class="wrap">
         <div class="submit-panel">
           <p class="section-label">Get started</p>
-          <h2>Bring your one-pager. We’ll start matching.</h2>
-          <p class="section-lead" style="margin-bottom:0">Tell us who you are and what you’re building. We start working your match at human speed — no auto-checkout, no spam bots signing deals.</p>
+          <h2>Build your partner kit — free, right here.</h2>
+          <p class="section-lead" style="margin-bottom:0">Tell it what you’re building. Free AI drafts a non-confidential one-pager and a first message to a factory. You also get search links and a protect-first checklist. Nothing is sent to anyone and nothing is stored on a server. Don’t type secret details (how it works inside, CAD, formulas) here.</p>
 
           <form id="match-form" class="form-grid" novalidate>
             <div class="field">
-              <label for="name">Name <span class="req">*</span></label>
-              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name" />
+              <label for="name">Your name or brand</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Shown on your one-pager (optional)" />
             </div>
             <div class="field">
-              <label for="email">Email <span class="req">*</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com" />
+              <label for="stage">Stage</label>
+              <select id="stage" name="stage"><option>Idea</option><option>Working prototype</option><option>Patent pending</option><option>Patented</option><option>Selling already</option></select>
             </div>
             <div class="field full">
               <label for="product">One-line product <span class="req">*</span></label>
               <textarea id="product" name="product" required placeholder="e.g. Portable water sterilizer for field clinics — seeking royalty ODM"></textarea>
             </div>
             <div class="field full">
+              <label for="details">Who it’s for and why it’s better (non-confidential)</label>
+              <textarea id="details" name="details" placeholder="e.g. Small clinics without power. Sterilizes 20 L/hour on a car battery. Half the weight of current units."></textarea>
+            </div>
+            <div class="field">
+              <label for="ask">What you want from a partner</label>
+              <select id="ask" name="ask"><option>Royalty license (they build and sell, pay me a royalty)</option><option>Joint development (we co-develop and share upside)</option><option>Manufacture for me, with tooling cost shared or amortized</option></select>
+            </div>
+            <div class="field">
               <label for="link">Optional link</label>
               <input id="link" name="link" type="url" placeholder="https://… (deck, site, or patent page)" />
             </div>
             <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Get matched</button>
-              <p class="form-note">Opens your email app with a pre-filled match request.</p>
+              <button type="submit" class="btn btn-primary" id="buildKit">Build my partner kit</button>
+              <p class="form-note" id="kitNote">Free AI writes about 1 answer every 30 seconds. Your draft is saved in this browser.</p>
             </div>
           </form>
           <div id="confirm" class="confirm" role="status" aria-live="polite"></div>
+          <div id="kit" class="kit" hidden></div>
         </div>
       </div>
     </section>
@@ -827,80 +847,13 @@
       </div>
       <div class="footer-contact">
         <strong style="color:var(--text);display:block;margin-bottom:0.35rem">Operator</strong>
-        Royalty Desk intake team<br />
-        Use the form above to reach us.
+        Operator-led matching isn’t open yet.<br />
+        The free partner kit above works now.
       </div>
     </div>
   </footer>
 
-  <script>
-    (function () {
-      // Set a public business inbox here before launch (left blank on purpose).
-      var CONTACT_EMAIL = "";
-      var form = document.getElementById("match-form");
-      var confirmEl = document.getElementById("confirm");
-
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var name = (document.getElementById("name").value || "").trim();
-        var email = (document.getElementById("email").value || "").trim();
-        var product = (document.getElementById("product").value || "").trim();
-        var link = (document.getElementById("link").value || "").trim();
-
-        if (!name || !email || !product) {
-          confirmEl.className = "confirm show";
-          confirmEl.style.borderColor = "rgba(255,180,84,0.45)";
-          confirmEl.style.background = "rgba(255,180,84,0.1)";
-          confirmEl.style.color = "#ffd9a0";
-          confirmEl.textContent = "Please fill in name, email, and your one-line product.";
-          return;
-        }
-
-        var body =
-          "Royalty Desk — new match request%0A%0A" +
-          "Name: " + encodeURIComponent(name) + "%0A" +
-          "Email: " + encodeURIComponent(email) + "%0A" +
-          "One-line product: " + encodeURIComponent(product) + "%0A" +
-          "Optional link: " + encodeURIComponent(link || "(none)") + "%0A";
-
-        if (!CONTACT_EMAIL) {
-          confirmEl.className = "confirm show";
-          confirmEl.style.borderColor = "rgba(255,180,84,0.45)";
-          confirmEl.style.background = "rgba(255,180,84,0.1)";
-          confirmEl.style.color = "#ffd9a0";
-          confirmEl.textContent = "Thanks, " + name + "! Online intake opens soon. Please check back shortly.";
-          return;
-        }
-        var mailto =
-          "mailto:" + CONTACT_EMAIL +
-          "?subject=" + encodeURIComponent("Royalty Desk — new match request") +
-          "&body=" + body;
-
-        var opened = false;
-        try {
-          var w = window.open(mailto, "_self");
-          opened = true;
-        } catch (err) {
-          opened = false;
-        }
-
-        // Always show confirmation so users without a mail client still get feedback
-        confirmEl.className = "confirm show";
-        confirmEl.style.borderColor = "rgba(61,214,198,0.35)";
-        confirmEl.style.background = "rgba(61,214,198,0.1)";
-        confirmEl.style.color = "#b8f5ec";
-        confirmEl.innerHTML =
-          "Thanks, <strong>" + name.replace(/</g, "&lt;") + "</strong> — we started working your match. We’ll follow up at <strong>" +
-          email.replace(/</g, "&lt;") +
-          "</strong> at human speed. If your mail app didn’t open, send the same details to " + CONTACT_EMAIL + " with subject “Royalty Desk — new match request.”";
-
-        // Soft-reset optional fields only; keep name/email for correction if needed
-        form.reset();
-        // Re-focus submit section for a11y
-        confirmEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      });
-    })();
-  </script>
+<script src="kit.js" defer></script>
 <script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
 <script src="ai-helper.js"></script>
 <script>AIHelper.init({"referrer": "royalty-desk", "title": "🤝 Deal helper", "color": "#5b8cff", "greeting": "Tell me about your product or invention idea and I'll help you prepare a clear one-page pitch for an OEM partner, list what to protect before you share it, and explain royalty deal basics.", "system": "You help inventors and small brands prepare to approach overseas OEM/ODM manufacturers for royalty or joint-development deals. Help write a short non-confidential product summary, list what to protect first (NDA, provisional patent with a qualified attorney, trademarks), explain typical royalty ranges and deal terms in general terms, and list due-diligence checks for a factory. Never ask for or repeat confidential technical details; tell the user to keep those out of chat. Keep answers short.", "note": "Not legal advice. Don't paste confidential details.", "chips": [["Write my one-page pitch", "Help me write a non-confidential one-page pitch for my product to send to a manufacturer. Ask me what you need."], ["Typical royalty terms", "What are typical royalty rates and key terms in a licensing deal with an OEM manufacturer?"], ["Check a factory", "What should I check before trusting a factory in China with my product?"]]});</script>
