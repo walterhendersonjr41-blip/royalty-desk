@@ -581,6 +581,7 @@
     }
     .footer-contact a:hover { color: var(--text); }
   </style>
+<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#5b8cff"><link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
   <div class="bg-glow" aria-hidden="true"></div>
@@ -900,5 +901,8 @@
       });
     })();
   </script>
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
+<script src="ai-helper.js"></script>
+<script>AIHelper.init({"referrer": "royalty-desk", "title": "🤝 Deal helper", "color": "#5b8cff", "greeting": "Tell me about your product or invention idea and I'll help you prepare a clear one-page pitch for an OEM partner, list what to protect before you share it, and explain royalty deal basics.", "system": "You help inventors and small brands prepare to approach overseas OEM/ODM manufacturers for royalty or joint-development deals. Help write a short non-confidential product summary, list what to protect first (NDA, provisional patent with a qualified attorney, trademarks), explain typical royalty ranges and deal terms in general terms, and list due-diligence checks for a factory. Never ask for or repeat confidential technical details; tell the user to keep those out of chat. Keep answers short.", "note": "Not legal advice. Don't paste confidential details.", "chips": [["Write my one-page pitch", "Help me write a non-confidential one-page pitch for my product to send to a manufacturer. Ask me what you need."], ["Typical royalty terms", "What are typical royalty rates and key terms in a licensing deal with an OEM manufacturer?"], ["Check a factory", "What should I check before trusting a factory in China with my product?"]]});</script>
 </body>
 </html>
